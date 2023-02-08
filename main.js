@@ -7,8 +7,7 @@ function createGrid(gridSize, cellSize) {
 
         for(let x=0; x<gridSize; x++){
             let childDiv = document.createElement("div");
-            childDiv.style.cssText = `border: 2px solid black; height: ${cellSize}px; width: ${cellSize}px;
-                                        box-sizing: border-box; display: inline-grid;`;
+            childDiv.style.cssText = `height: ${cellSize}px; width: ${cellSize}px;`;
             childDiv.id = `cell${x}_${y}`;
             childDiv.classList.add("cell");
             parentDiv.appendChild(childDiv);
