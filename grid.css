@@ -1,9 +1,23 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .cell {
-    border: 2px solid black;
+    border: 1px solid black;
     box-sizing: border-box;
     display: inline-block;
 }
 
 .colored {
     background-color: yellow;
+}
+
+#newGrid {
+    font-weight: bold;
+    margin: 10px;
+    padding: 5px;
+    background-color: black;
+    color: azure;
 }
