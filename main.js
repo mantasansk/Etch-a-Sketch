@@ -17,4 +17,14 @@ function createGrid(gridSize, cellSize) {
 }
 
 
+function colorCell(e) {
+    let cell = e.target;
+    if (cell.classList.contains("colored")) return;
+
+    cell.classList.add("colored");
+}
+
+
 createGrid(16, 20);
+const cells = document.querySelectorAll(".cell");
+cells.forEach(e => e.addEventListener("mouseenter", colorCell));
